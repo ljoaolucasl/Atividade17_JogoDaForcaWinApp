@@ -1,14 +1,14 @@
 # Jogo Da Forca
 
-Uma Jogo da Forca feito usando Windows Forms
+Um Jogo da Forca feito usando Windows Forms
 
 
 ## Funcionalidades
 
 - Mais de 40 Palavras Secretas para descobrir
 - Um pequeno Contexto Inicial dentro do jogo
-- Super pr·tico para Jogar Novamente ao fim de cada Jogo
-- IlustraÁıes exclusivas e divertidas
+- Super pr√°tico para Jogar Novamente ao fim de cada Jogo
+- Ilustra√ß√µes exclusivas e divertidas
 - Te Divertir!
 
 
@@ -20,4 +20,4 @@ Uma Jogo da Forca feito usando Windows Forms
 
 ## Autores
 
-- [@Jo„o Lucas Claudino](https://github.com/ljoaolucasl)
+- [@Jo√£o Lucas Claudino](https://github.com/ljoaolucasl)
