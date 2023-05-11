@@ -23,11 +23,11 @@ namespace Atividade17_JogoDaForca.WinForm
                 "MAGO", "DRAGÃO", "TROLL", "FLORESTA", "FEITICEIRO", "CERCO", "ARQUEIRO", "LANCEIRO", "FORTALEZA", "SOLDADO",
                 "CABELO", "BALÃO", "ESTRADA", "PEDRA", "DRUIDA", "VELA", "MURALHA", "EQUILIBRIO", "ORACULO", "CANHÃO",
                 "CARRUAGEM", "ALDEÃO", "COROA", "CATAPULTA", "FORTUNA", "GUERREIRO", "CERVEJA", "LENDÁRIO", "MÍTICO",
-                "FANTÁSTICO", "ÉPICO", "HERÓI", "MEDIEVAL", "BATALHA", "ACORDEÃO", "FIDELIDADE", "GUILHOTINA"};
+                "FANTÁSTICO", "ÉPICO", "HERÓI", "MEDIEVAL", "BATALHA", "ACORDEÃO", "FIDELIDADE", "GUILHOTINA", "FOGO"};
 
             Random GerarNumeroAleatorio = new();
 
-            numeroAleatorio = GerarNumeroAleatorio.Next(0, 46);
+            numeroAleatorio = GerarNumeroAleatorio.Next(0, 47);
 
             palavraSecreta = palavrasSecretas[numeroAleatorio];
         }
