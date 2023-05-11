@@ -41,7 +41,7 @@ namespace Atividade17_JogoDaForca.WinForm
 
             for (int i = 0; i < palavraSecretaChar.Length; i++)
             {
-                if (String.Compare(palavraSecretaChar[i].ToString(), letraEscolhida.ToString(), CultureInfo.CurrentCulture, CompareOptions.IgnoreNonSpace) == 0)
+                if (VerificaLetra(palavraSecretaChar[i]))
                 {
                     newPalavraSecretaChar[i] = palavraSecretaChar[i];
                     acertou = true;
@@ -52,6 +52,21 @@ namespace Atividade17_JogoDaForca.WinForm
                 contadorErros++;
 
             return new string(newPalavraSecretaChar);
+        }
+
+        public bool VerificaSePalavraAcertada(string palavraSecreta)
+        {
+            return palavraSecreta == this.palavraSecreta.AdicionarEspacosEntreLetras();
+        }
+
+        public bool VerificaSeGameOver()
+        {
+            return contadorErros == 6;
+        }
+
+        private bool VerificaLetra(char palavraSecretaChar)
+        {
+            return String.Compare(palavraSecretaChar.ToString(), letraEscolhida.ToString(), CultureInfo.CurrentCulture, CompareOptions.IgnoreNonSpace) == 0;
         }
     }
 }

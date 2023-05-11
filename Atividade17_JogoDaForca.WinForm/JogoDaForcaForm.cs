@@ -37,17 +37,12 @@ namespace Atividade17_JogoDaForca.WinForm
 
                 InserirLetraErradaJaEscolhida();
 
-                if (jogoDaForca.contadorErros == 6)
+                if (jogoDaForca.VerificaSeGameOver())
                     GameOver();
             }
 
-            if (VerificaSePalavraAcertada())
+            if (jogoDaForca.VerificaSePalavraAcertada(labelPalavraSecreta.Text))
                 Ganhou();
-        }
-
-        private bool VerificaSePalavraAcertada()
-        {
-            return labelPalavraSecreta.Text == jogoDaForca.palavraSecreta.AdicionarEspacosEntreLetras();
         }
 
         private void InserirLetraErradaJaEscolhida()
